@@ -26,19 +26,21 @@ public class HelloWorld {
 //        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) o;
-        int x = 4;
-        x += 5;
-
-        int x = 3;
-        int y = 4;
-        y *= x;
-
-        int x = 10;
-        int y = 2;
-        x /= y;
-        y -= x;
+//        int x = 4;
+//        x += 5;
+//
+//        int x = 3;
+//        int y = 4;
+//        y *= x;
+//
+//        int x = 10;
+//        int y = 2;
+//        x /= y;
+//        y -= x;
 
         // If you assing a value to a numerical variable that is too large for the type
         // it will cut off the numbers to fit the amount of bytes.
+        // int x = Integer.MAX_VALUE;
+        //x++; // This will result in x = -2147483648
     }
 }
