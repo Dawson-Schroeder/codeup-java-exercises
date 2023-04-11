@@ -29,9 +29,18 @@ public class ControlFlowExercises {
 //            i = (int) Math.pow(i, 2);
 //            System.out.println("i is " + i );
 //        }
+        //in class for the i*=i
+        /*
+        long i = 2;
+        do {
+            System.out.println(i);
+            i*=i;
+        } while (i < 1_000_000);
+
+         */
 
         // FIZZBUZZ
-//        for(int i = 1; i <= 100; i++){
+//        for (int i = 1; i <= 100; i++){
 //            if (i % 3 == 0 && i % 5 == 0){
 //                System.out.println(i + ": FizzBuzz");
 //            } else if(i % 5 == 0){
@@ -62,8 +71,30 @@ public class ControlFlowExercises {
 //        } while (input.next().equalsIgnoreCase("y"));
 //        System.out.println("Goodbye!");
 
+        // in-class-table-of-powers
+        /*
+        String choice = "y";
+        while(choice.equalsIgnoreCase("y")) {
+            System.out.println("What number would you like to go up to?");
+            Scanner input = new Scanner(System.in);
+            int number = input.nextInt();
+            System.out.println("Here is your table");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
+            for (int i = 1; i <= number; i++) {
+                System.out.println(i + "       |1      |1");
+                int squared = i * i;
+                int cubed = squared * i;
+                System.out.println(i + "       |" + squared + "      |" + cubed);
+            }
+            System.out.println("Do you want to contunue? [y/N]");
+            input.nextLine();
+            choice = input.nextLine();
+        }
+         */
 
-            // Grade Calc
+
+        // Grade Calc
         Scanner scanner = new Scanner(System.in);
         boolean continueLoop = true;
         while (continueLoop) {
@@ -95,6 +126,25 @@ public class ControlFlowExercises {
                     System.out.print("Do you want to continue? [y,N]");
                 } while (scanner.next().equalsIgnoreCase("y"));
                 System.out.println("Goodbye!");
+         */
+        // in class grade calc
+        /*
+        System.out.println("What is the grade out of 100?");
+        int numberGrade = scanner.nextInt();
+        scanner.nextLine();
+        if (numberGrade >= 99){
+            System.out.println("A+");
+        } else if (numberGrade <= 98 && numberGrade >= 88){
+            System.out.println("A");
+        } else if (numberGrade <= 87 && numberGrade >= 80){
+            System.out.println("B");
+        } else if (numberGrade <= 79 && numberGrade >= 67){
+            System.out.println("C");
+        } else if (numberGrade <= 66 && numberGrade >= 60) {
+            System.out.println("D");
+        } else if (numberGrade <= 59 && numberGrade >= 0) {
+            System.out.println("F");
+        }
          */
 
 
