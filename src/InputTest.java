@@ -14,10 +14,13 @@ public class InputTest {
 //        System.out.println(input.getInterger(1, 100));
 //
 //        System.out.println(input.getDouble(1, 100));
+//
+//        System.out.println(input.getDouble());
+//        input.getGhost();
+//        System.out.println(input.getString());
+//        System.out.println(input.getInt());
 
-        System.out.println(input.getDouble());
-        input.getGhost();
-        System.out.println(input.getString());
+
 
 
 

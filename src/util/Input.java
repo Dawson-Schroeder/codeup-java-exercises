@@ -90,14 +90,41 @@ public class Input {
         }
     }
 
-    public int getInt(){
-        System.out.println("Enter an interger: ");
-        return scanner.nextInt();
-    }
+//    public int getInt(){
+//        System.out.println("Enter an interger: ");
+//        return scanner.nextInt();
+//    }
     public int getInt(String prompt){
         System.out.println(prompt);
         return scanner.nextInt();
     }
+    public int getInt(){
+        System.out.println("Enter an interger:");
+        String userInput = getString();
+        try{
+            Integer.valueOf(userInput);
+        } catch(NumberFormatException){
+            System.out.println("You did not enter a valid number. Please try again");
+            getInt();
+        }
+        return Integer.parseInt(userInput);
+    }
+
+    /*public int getInt(String prompt) {
+        while (true) {
+            try {
+                String inputStr = getString(prompt);
+                if (inputStr == null || inputStr.isEmpty()) {
+                    throw new IllegalArgumentException("Input cannot be null or empty");
+                }
+                return Integer.valueOf(inputStr);
+            } catch (NumberFormatException ex) {
+                System.out.println("Invalid input. Please enter an integer.");
+            } catch (IllegalArgumentException ex) {
+                System.out.println(ex.getMessage());
+            }
+        }
+    }*/
 
     public double getDouble(double min, double max) {
         System.out.printf("Enter a number between %.1f and %.1f: ", min, max);
