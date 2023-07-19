@@ -20,7 +20,7 @@ public class ShapesTest {
 *           Thats the class that actually sets the length and width from the start.
 *   2: What happens if you try to call the getLength or getWidth methods of the myShape variable? Why?
 *       A: Inteli J throws and error and asks you to create a Method called getLength or getWidth inside of Measurable.
-*           Because the rectangle nor the square hold the data for length and width, quadralateral does.
+*           Because the rectangle nor the square hold the data for length and width, Quadralateral does.
  * */
 
 

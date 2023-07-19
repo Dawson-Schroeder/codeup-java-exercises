@@ -43,21 +43,22 @@ class Bob {
         boolean endConversation = false;
 
         while (!endConversation) {
-            System.out.print("What's up? if you're done say bye already... ");
+            System.out.print("What's up? if you're done, say bye already... ");
             String response = scanner.nextLine();
 
             if (response.endsWith("?")) {
-                System.out.println("Sure");
+                System.out.println("Bob: Sure");
             } else if (response.endsWith("!")) {
-                System.out.println("Whoa, chill out!");
+                System.out.println("Bob: Whoa, chill out!");
             } else if (response.length() == 0) {
-                System.out.println("Fine. Be that way!");
+                System.out.println("Bob: Fine. Be that way!");
             } else if (response.equalsIgnoreCase("bye")) {
                 endConversation = true;
             } else {
-                System.out.println("Whatever");
+                System.out.println("Bob: Whatever nerd");
             }
         }
+
 
 
     }

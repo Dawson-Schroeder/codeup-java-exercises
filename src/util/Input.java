@@ -98,17 +98,17 @@ public class Input {
         System.out.println(prompt);
         return scanner.nextInt();
     }
-    public int getInt(){
-        System.out.println("Enter an interger:");
-        String userInput = getString();
-        try{
-            Integer.valueOf(userInput);
-        } catch(NumberFormatException){
-            System.out.println("You did not enter a valid number. Please try again");
-            getInt();
-        }
-        return Integer.parseInt(userInput);
-    }
+//    public int getInt(){
+//        System.out.println("Enter an interger:");
+//        String userInput = getString();
+//        try{
+//            Integer.valueOf(userInput);
+//        } catch(NumberFormatException){
+//            System.out.println("You did not enter a valid number. Please try again");
+//            getInt();
+//        }
+//        return Integer.parseInt(userInput);
+//    }
 
     /*public int getInt(String prompt) {
         while (true) {
